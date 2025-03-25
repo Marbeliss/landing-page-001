@@ -1,0 +1,55 @@
+* /*es un selector universal. Esto significa que selecciona todos los elementos dentro de un documento HTML. Es especialmente útil cuando necesitas aplicar un estilo común a todos los elementos, sin tener que escribirlos individualmente. */
+{
+  margin: 0; /*Cuando defines , estás eliminando todos los márgenes externos del elemento, tanto en la parte superior, inferior, izquierda como derecha.*/
+  padding: 0; /*La propiedad  en CSS controla el espacio interior de un elemento, es decir, el espacio entre el contenido del elemento y su borde. Cuando defines , eliminas cualquier espacio interior que pudiera existir de forma predeterminada.*/
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.nav-bar{
+  position: sticky; /*se comporte como una combinación entre  y . Básicamente, el elemento permanece "pegajoso" a su posición original hasta que se alcanza un cierto límite dentro de su contenedor principal. A partir de ahí, se queda fijo en la pantalla.*/
+  top: 0; /* Define el punto en el que se "pega" */
+  z-index: 10; /* Asegura que esté por encima de otros elementos */
+}
+
+.navbar{
+  background-image: linear-gradient(to right, #a517ba, #b53cf2); /*color de fondo del navbar*/
+  padding: 0 !important;
+}
+
+.navbar-brand img{ /*para cambiar el tañano del logo en el caso de que sea img*/
+  height: 2.5rem; /*altura*/
+  padding-left: 1.25rem; /*relleno izquierdo de 20 pixeles*/
+}
+
+.navbar-nav li{
+  padding: 0 10px; /*establece el área de relleno en los cuatro lados de un elemento a la vez.*/
+}
+
+.navbar-nav li a{
+  color: white !important;
+  font-weight: 600;
+  float: right; /*float ubica un elemento al lado izquierdo o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado.*/
+  text-align: left; /* Se alinea el texto a la derecha cuando esta en pantallas pequeñas*/
+}
+
+.navbar-toggler{
+   outline: none !important;
+   
+}
+
+/*-----------<!--banner-->------------*/
+
+#banner{
+  background-image: linear-gradient(to right, #a517ba, #b53cf2);
+  color: white;
+  padding-top: 5%; /*establece el espacio de relleno requerido en la parte superior del elemento. */
+}
+
+.promo-title{
+  font-size: 40px; /*font-size especifica la dimensión de la letra. */
+  font-weight: 600; /*especifica el peso o grueso de la letra. Algunos tipos de letra sólo están disponibles en normal y bold.*/
+  margin-top: 100px;
+}
