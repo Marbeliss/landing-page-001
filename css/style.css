@@ -2,10 +2,12 @@
 {
   margin: 0; /*Cuando defines , estás eliminando todos los márgenes externos del elemento, tanto en la parte superior, inferior, izquierda como derecha.*/
   padding: 0; /*La propiedad  en CSS controla el espacio interior de un elemento, es decir, el espacio entre el contenido del elemento y su borde. Cuando defines , eliminas cualquier espacio interior que pudiera existir de forma predeterminada.*/
+  
 }
 
 body{
   font-family: sans-serif;
+  
 }
 
 .nav-bar{
@@ -43,7 +45,7 @@ body{
 /*-----------<!--banner-->------------*/
 
 #banner{
-  background-image: linear-gradient(to right, #a517ba, #b53cf2);
+  background-image: linear-gradient(to right, #a517ba, #7108a5);
   color: white;
   padding-top: 5%; /*establece el espacio de relleno requerido en la parte superior del elemento. */
 }
@@ -52,4 +54,128 @@ body{
   font-size: 40px; /*font-size especifica la dimensión de la letra. */
   font-weight: 600; /*especifica el peso o grueso de la letra. Algunos tipos de letra sólo están disponibles en normal y bold.*/
   margin-top: 100px;
+}
+
+.play-btn{
+  width: 45px;
+  margin: 20px;
+}
+
+#banner a{
+  color: white;
+  text-decoration: none;
+}
+
+.bottom-img{
+  width: 100%; /*width establece el ancho de un elemento. Por defecto, establece el ancho del área de contenido,*/
+}
+
+/*--------servicios---------*/
+#services{
+  background-image: linear-gradient(to right, #F9E0FA, #F9E0FA);
+  padding: 80px 0;
+} 
+
+.services-img{
+  width: 100px;
+  margin-top: 20px;
+}
+
+.services{
+  padding: 20px;
+}
+
+.services h4{
+  padding: 5px;
+  margin: 25px;
+  text-transform: uppercase;
+}
+
+.title::before{
+  content: '';
+  background: #7b1798;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /*linea bajo el titulo*/
+  transform: translateY(63px);/*linea bajo el titulo*/
+}
+
+
+
+/*----------*/
+.Btn {
+  position: relative;
+  width: 150px;
+  height: 55px;
+  border-radius: 60px;
+  border: none;
+  background-color: rgb(151, 95, 255);
+  color: white;
+  box-shadow: 0px 15px 15px rgb(56, 20, 94) inset, /*color de fondo btn*/
+  0px 5px 10px rgba(5, 5, 5, 0.212),
+  0px -10px 10px rgb(124, 54, 255) inset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, hsl(292, 78%, 41%), #7108a5);
+}
+
+.Btn::before {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(250, 250, 250, 0.678);
+  content: "";
+  filter: blur(1px);
+  top: 7px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #a517ba, #7108a5);
+}
+
+.Btn::after {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(250, 250, 250, 0.137);
+  content: "";
+  filter: blur(1px);
+  bottom: 7px;
+  border-radius: 50%;
+}
+
+.Btn:hover {
+  animation: jello-horizontal 0.9s both;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
