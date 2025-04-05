@@ -1,7 +1,9 @@
+
+
 * /*es un selector universal. Esto significa que selecciona todos los elementos dentro de un documento HTML. Es especialmente útil cuando necesitas aplicar un estilo común a todos los elementos, sin tener que escribirlos individualmente. */
 {
   margin: 0; /*Cuando defines , estás eliminando todos los márgenes externos del elemento, tanto en la parte superior, inferior, izquierda como derecha.*/
-  padding: 0; /*La propiedad  en CSS controla el espacio interior de un elemento, es decir, el espacio entre el contenido del elemento y su borde. Cuando defines , eliminas cualquier espacio interior que pudiera existir de forma predeterminada.*/
+  padding: 0px; /*La propiedad  en CSS controla el espacio interior de un elemento, es decir, el espacio entre el contenido del elemento y su borde. Cuando defines , eliminas cualquier espacio interior que pudiera existir de forma predeterminada.*/
   
 }
 
@@ -11,7 +13,7 @@ body{
 }
 
 .nav-bar{
-  position: sticky; /*se comporte como una combinación entre  y . Básicamente, el elemento permanece "pegajoso" a su posición original hasta que se alcanza un cierto límite dentro de su contenedor principal. A partir de ahí, se queda fijo en la pantalla.*/
+  position: fixed; /*se comporte como una combinación entre  y . Básicamente, el elemento permanece "pegajoso" a su posición original hasta que se alcanza un cierto límite dentro de su contenedor principal. A partir de ahí, se queda fijo en la pantalla.*/
   top: 0; /* Define el punto en el que se "pega" */
   z-index: 10; /* Asegura que esté por encima de otros elementos */
 }
@@ -178,4 +180,134 @@ body{
   100% {
     transform: scale3d(1, 1, 1);
   }
+}
+
+
+/*---------about-us------------*/
+
+#about-us{
+  background: #f8f9fa;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.about-title{
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 8%;
+}
+
+#about-us ul li{
+  margin: 10px 0;
+}
+
+#about-us ul{
+  margin-left: 20px;
+}
+
+/*------testimonios------*/
+#testimonios{
+  margin: 100px 0px;
+}
+
+.testimonios{
+  border-left: 4px solid #7108a5;
+  
+}
+
+.testimonios img{
+  height: 95px;
+  width: 85px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.user-details{
+  display: inline-block;
+  font-size: 12px;
+}
+
+/*--------social media section---------*/
+
+#social-media{
+  background-image: linear-gradient(to right, #a517ba, #7108a5);
+  padding: 100px 0;
+  
+}
+
+#social-media p{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.social-icons img{
+  width: 35px;
+  transition: 0.5s;
+}
+
+.social-icons a:hover img{
+  transform: translateY(-10px);
+}
+
+/*--------footer---------*/
+#footer{
+  background-image: linear-gradient(to right, #a517ba, #7108a5);
+  color: fff;
+}
+
+.footer-img{
+  width: 100%;
+}
+
+.footer-box{
+  padding: 20px;
+}
+
+.footer-box img{
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-box .fa{
+  margin-right: 8px;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: .093333rem;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #a517ba, #7108a5);
+}
+
+.footer-box .form-control{
+  box-shadow: none !important; 
+  border: none;
+  border-radius: 0;
+  margin-top: 25px;
+  max-width: 250px;
+}
+
+.footer-box .btn-primary{
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  margin-top: 30px;
+  background-image: linear-gradient(to right, #a517ba, #7108a5);
+}
+
+hr{
+  background-color: #fff;
+}
+
+.copyright{
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.copyright{
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
 }
